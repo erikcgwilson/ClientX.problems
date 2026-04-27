@@ -1,0 +1,34 @@
+object F1: TF1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    Position.X = 88.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 241.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnDblClick = Memo1DblClick
+    Viewport.Width = 337.000000000000000000
+    Viewport.Height = 241.000000000000000000
+  end
+  object ButtonShowF2: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 1
+    Text = 'Show F2'
+    OnClick = ButtonShowF2Click
+  end
+end
